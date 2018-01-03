@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilo.css" type="text/css" media="all">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!--    
+<link rel="stylesheet" href="css/estilo.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Efectos del Slider -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+
+<body>
+
+  <div class="header">            
+          <img src="imagenes/logo.png" width="40" height="40" alt=" ">
+          <h8>BDA Systems</h8>  
+  </div>
+    
+  <div class="nav">
+    <div class="dropdown">
+      <button class="dropbtn">Conócenos</button>
+      <div class="dropdown-content">
+        <a href="index.html">Inicio</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="directorio.html">Directorio</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Soluciones</button>
+      <div class="dropdown-content">
+        <a href="bigdata.html">Big Data Analytics</a>
+            
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Documentación</button>
+      <div class="dropdown-content">
+        <a href="recursos-digitales.html">Recursos digitales</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Contacto</button>
+      <div class="dropdown-content">
+        <a href="contacto.html">Escríbenos</a>        
+      </div>
+    </div>
+  </div>
+    
+    
+<div class="w3-content w3-display-container"><center> <br>
+  <img class="mySlides" src="imagenes/a.png" width="800" height="450" >
+  <img class="mySlides" src="imagenes/b.jpg" width="800" height="450" > <!-- style="width:60%" -->
+  <img class="mySlides" src="imagenes/c.jpeg" width="800" height="450">  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  [Imágenes con Realidad Aumentada]
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button></center>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+        
+    
+<div class="row">
+    <div class="col-4 menu">                        
+      <h3>Banca</h3>
+      <figure>
+        <center><img src="imagenes/banca.jpg" width="300" height="150"></center>
+      </figure>
+      <p>Soluciones para que las entidades financieras tomen decisiones eficientes en tiempo real, como la detección de fraude en medios de pago o la gestión de efectivo en sucursales.</p>       
+    </div>
+
+    <div class="col-4">      
+      <h3>Salud</h3>    
+      <figure>
+        <center><img src="imagenes/salud.jpg" width="300" height="150"></center>
+      </figure>
+      <p>Aplicamos técnicas propias de análisis de datos para optimizar la gestión clínica, el tratamiento y la atención al paciente dando apoyo a la medicina personalizada. Ofrecemos servicios de alertas y generación de recomendaciones, etc.</p>      
+    </div>
+
+    <div class="col-4">      
+      <h3>Servicios</h3>
+      <figure>
+        <center><img src="imagenes/clientes.jpg" width="300" height="150"></center>
+      </figure>      
+      <p>Usamos tecnologías Big Data para ofrecer a las empresas información nueva sobre sus usuarios o clientes finales para así poder tomar decisiones estratégicas de negocio.</p>      
+    </div>
+</div>    
+
+<div class="footer">
+  <p>&copy;  2017 BDA Systems</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+	<section id="reproductor">
+          <video id="medio" width="400" height="200" controls>
+             <source src="videos/big-data.avi">  
+          </video>
+        </section>
+
+Menú lateral
+
+Open Data Handbook	   http://opendatahandbook.org/guide/es/
+Facebook Twitter LinedIn
